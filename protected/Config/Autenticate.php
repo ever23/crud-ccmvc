@@ -1,14 +1,22 @@
 <?php
 
 return array(
-    'SessionName' => 'Pollera-Session',
+    //'class' => '',
+    'param' =>
+    array(
+        0 =>
+        array(
+            0 => '*/*/*',
+        ),
+    ),
+    'SessionName' => 'MY_APP',
     'SessionCookie' =>
     array(
-        'path' => '/polleras/api/',
+        'path' => NULL,
         'cahe' => 'nocache,private',
-        'time' => '+1 day',
+        'time' => 21600,
         'dominio' => NULL,
         'httponly' => false,
-        'ReadAndClose' => true,
+        'ReadAndClose' => false,
     ),
 );

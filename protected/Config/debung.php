@@ -1,3 +1,3 @@
 <?php
 
-return false; //['file' => 'CcMvcLog.txt'];
+return false;

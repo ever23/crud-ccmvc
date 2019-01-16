@@ -21,9 +21,10 @@ class BasicForm extends FormModel
      */
     protected function Campos()
     {
+        $this->hidden('id');
         $this->text('nombre')->Validator("required|maxlength:200");
         $this->email('email')->Validator("required");
-        $this->tel('telefono')->Validator("required");
+        $this->text('telefono')->Validator("required|pattern:\+?\d{10,}");
     }
 
     /**
@@ -32,7 +33,7 @@ class BasicForm extends FormModel
      */
     protected function OnSubmit()
     {
-        //tu codigo aqui
+        $this->fecha=new \DateTime();
     }
 
 }

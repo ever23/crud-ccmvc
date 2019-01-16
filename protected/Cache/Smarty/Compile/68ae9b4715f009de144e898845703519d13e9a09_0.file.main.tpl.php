@@ -1,9 +1,38 @@
+<?php
+/* Smarty version 3.1.31, created on 2013-01-01 11:50:33
+  from "G:\Programacion\php\prueba-trabajo\protected\layauts\main.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.31',
+  'unifunc' => 'content_50e2bf7982da52_29471632',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '68ae9b4715f009de144e898845703519d13e9a09' => 
+    array (
+      0 => 'G:\\Programacion\\php\\prueba-trabajo\\protected\\layauts\\main.tpl',
+      1 => 1357037422,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_50e2bf7982da52_29471632 (Smarty_Internal_Template $_smarty_tpl) {
+?>
 <!doctype html>
 <html>
     <head>
-        {$this->GetContenHead()}
-        <script  src='src/js/jquery-3.1.0.min.js' type='text/javascript'></script>
-        <script  src='src/js/bootstrap.min.js' type='text/javascript'></script>
+        <?php echo $_smarty_tpl->tpl_vars['this']->value->GetContenHead();?>
+
+        <?php echo '<script'; ?>
+  src='src/js/jquery-3.1.0.min.js' type='text/javascript'><?php echo '</script'; ?>
+>
+        <?php echo '<script'; ?>
+  src='src/js/bootstrap.min.js' type='text/javascript'><?php echo '</script'; ?>
+>
         <link  rel='stylesheet' href='src/css/bootstrap.min.css' media='screen'/>
         <link  rel='stylesheet' href='src/css/styles.css' media='screen'/>
         
@@ -32,7 +61,8 @@
             <div class="container"> 
             <div class="container">
                 <!--  contenido proveniente de el controlador y los views  -->
-                {$content}
+                <?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+
             </div>
         </div> 
         <div class="page-header"></div>
@@ -47,3 +77,5 @@
 </html>
 
 
+<?php }
+}
