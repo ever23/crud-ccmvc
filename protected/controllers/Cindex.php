@@ -32,8 +32,10 @@ class Cindex extends Controllers
     }
 
     /**
-     * Muestra los datos de msyql 
-     * 
+     * Muestra los datos de msyql
+     * @param \Cc\Mvc\DBtabla $test  representacion de la tabla test en la base de datos
+     * @param int $id si esta presente se seleccinara el intem en que coincida 
+     * @param string $q si esta presente se realizarauna busqueda en los campos 'nombre', 'email', 'telefono'
      */
     public function index(DBtabla $test, $id = null, $q = null)
     {
@@ -52,10 +54,9 @@ class Cindex extends Controllers
     }
 
     /**
-     * 
-     * @param \Cc\Mvc\DBtabla $test
-     * @param type $id
-     * @return type
+     * edita un elemento de la tabla 
+     * @param \Cc\Mvc\DBtabla $test representacion de la tabla test en la base de datos
+     * @param int $id
      */
     public function editar(DBtabla $test, $id)
     {

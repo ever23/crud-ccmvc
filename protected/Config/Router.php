@@ -18,7 +18,7 @@ return [
     /**
      * PROTOCOLO EN EL QUE TRABAJARA LA APLICACION
      */
-    'protocol' => 'http',
+    'protocol' => 'https',
     /**
      * ARCHIVOS QUE ABRIRA POR DEFECTO AL ENRUTAR ARCHIVOS ESTATICOS
      */
