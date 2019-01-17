@@ -15,7 +15,7 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-xs-8 col-xs-offset-2">
+    <div class="col-md-10 col-md-offset-1">
         <h3>Datos</h3>
         <table class="table table-responsive">
             <thead>

@@ -23,7 +23,7 @@ class BasicForm extends FormModel
     {
         $this->hidden('id');
         $this->text('nombre')->Validator("required|maxlength:200");
-        $this->email('email')->Validator("required");
+        $this->email('email')->Validator("required|maxlength:200");
         $this->text('telefono')->Validator("required|pattern:\+?\d{10,}");
     }
 
@@ -33,7 +33,7 @@ class BasicForm extends FormModel
      */
     protected function OnSubmit()
     {
-        $this->fecha=new \DateTime();
+        $this->fecha = (new \DateTime("now", new \DateTimeZone('America/Caracas')));
     }
 
 }
