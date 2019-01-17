@@ -5,3 +5,9 @@ EL codigo importante de esta funcionalidad esta en:
 * [protected/view](protected/view "view") donde se encuentran las vistas 
 * [protected/model](protected/model "model") donde se encuentran los modelos
 * [protected/config](protected/config "config") archivos de configuracion para CcMvc
+
+## Instalacion de paquetes 
+```sh
+$ composer install
+```
+
